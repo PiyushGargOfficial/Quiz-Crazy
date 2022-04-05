@@ -1,0 +1,58 @@
+.login{
+    margin: 40px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.divFlex{
+    display: flex;
+
+}
+
+.legend{
+    color: #000;
+    font-family: var(--poppins);
+    font-weight: 700;
+}
+
+input{
+    padding: 20px 25px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    font-family: var(--poppins);
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+input::placeholder{
+    color: #000;
+}
+
+select{
+    padding: 20px 25px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    font-family: var(--poppins);
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.startButton{
+    padding: 20px 25px;
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 40px;
+    border: none;
+    font-family: var(--poppins);
+    font-size: 1rem;
+    font-family: var(--poppins);
+    margin-bottom: 40px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,177,0,1) 100%);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+}
