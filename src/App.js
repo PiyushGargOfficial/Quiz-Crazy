@@ -1,14 +1,20 @@
 import Login from "./components/loginPage/Login";
 import './App.css'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Quiz from './components/QuizPage/Quiz'
 
 function App() {
   return (
-    <div className="app">
-      <div className="mainBox">
-        <div className="titleBox">Quiz Crazy</div>
-        <Login />
+    <Router>
+      <div className="app">
+      
+        <Routes>
+          <Route path ='/' exact element={<Login/>} />
+          <Route path ='/quiz' exact element={<Quiz/>} />
+        </Routes>
+      
       </div>
-    </div>
+    </Router>
   );
 }
 
