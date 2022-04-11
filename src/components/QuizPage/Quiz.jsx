@@ -23,12 +23,11 @@ const Quiz = () => {
   useEffect(()=> {
     setOptions(Questions && handleRandom([Questions[currQues]?.correct_answer,...Questions[currQues]?.incorrect_answers]))
     setName(State.username)
-  },[Questions])
+  },[Questions, currQues])
 
   const handleRandom = (optionss) => {
     return optionss.sort(()=> Math.random() - 0.5)
   }
-  console.log(options)
 
   return (
     <div className='quiz'>
