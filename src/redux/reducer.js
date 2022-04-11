@@ -32,7 +32,7 @@ switch(action.type){
     case actionTypes.SET_QUESTIONS:
         return {
             ...state,
-            questions: state.questions
+            questions: []
         }
 
     default:
