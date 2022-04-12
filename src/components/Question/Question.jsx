@@ -57,10 +57,10 @@ const dispatch = useDispatch()
 
   return (
     <div className='question'>
-      <h1>Question: {currQues + 1}</h1>
+      <h1 className='questionName'>Question : {currQues + 1}</h1>
 
       <div className="singleQuestion">
-        <h2>{questions[currQues].question}</h2>
+        <h2 className='questionMain'>{questions[currQues].question}</h2>
         {error && (<div>{error}</div>)}
         <div className="options">
           

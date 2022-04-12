@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import { useLocation,useNavigate } from 'react-router-dom'
+import './Result.css'
 
 const Result = () => {
 
@@ -23,7 +24,7 @@ const navigateHome = () => {
   return (
     <div className='result'>
         <span className="title">Final Score: {location.state.score}</span>
-        <button onClick={()=>{navigateHome()}}>Go to Homepage</button>
+        <button onClick={()=>{navigateHome()}} className='goHome'>Go to Homepage</button>
     </div>
   )
 }
